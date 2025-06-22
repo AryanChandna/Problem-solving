@@ -4,8 +4,7 @@ public class pe3 {
     
     public static void main(String[] args){
 
-        // largest prime
-
+        // largest prime factor of a number
         Scanner scn = new Scanner(System.in);
         long n = scn.nextLong();
         Set<Long> set = largestPrime(n);
@@ -17,6 +16,7 @@ public class pe3 {
             }
         }
         System.out.println(max);
+        scn.close();
     }
 
     public static Set<Long> largestPrime(long n){
